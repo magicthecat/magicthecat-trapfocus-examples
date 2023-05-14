@@ -15,10 +15,24 @@
     }
 
     #myElement {
-        background-color: antiquewhite;
+        background-color: greenyellow;
         padding: 15px;
         margin-left: 20%;
         margin-right: 20%;
+        z-index: 1000;
+        border: solid 2px black;
+        border-radius: 5px;
+        position: absolute;
+    }
+
+    #modalBackground {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-color: rgba(175, 175, 175, 0.3);
     }
 </style>
 
@@ -26,16 +40,8 @@
     <h1>Vanilla Javascript Example</h1>
 
     <p tabindex="0">Outside the Trap</p>
-
-    <div id="myElement">
-        <p>I am a div with id "myElement"</p>
-        <button>First Button</button>
-        <button>Second Button</button>
-        <button>Third Button</button>
-        <input></input>
-
-
-    </div>
+    <div id="modal-button"></div>
+    <div id="modal-element"></div>
 
     <p tabindex="0">Outside the Trap</p>
 
